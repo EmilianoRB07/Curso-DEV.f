@@ -1,0 +1,5 @@
+Si bien aun no vamos a adentrarnos a lo que es node.js si no servira como una herramienta para codificar
+solo usamos html y css, sin embargo, no lo es todo para crear una pagina o sitio web, node.js tiene
+paquetes utiles que podemos usar para programar funciones.
+
+LINK:https://imgur.com/a/MWgHqHU
