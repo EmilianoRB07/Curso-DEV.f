@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto – SmileCare</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C9 3 6 5.5 6 9c0 2 .5 3.5 1.2 5L8.5 20c.3 1 1 1.5 1.8 1.5h3.4c.8 0 1.5-.5 1.8-1.5l1.3-6C17.5 12.5 18 11 18 9c0-3.5-3-6-6-6z" fill="white" opacity=".9"/></svg>
+      </div>
+      <span class="nav-name">Smile<span>Care</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="doctor.html">El Doctor</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="nav-cta">Agendar cita</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <div class="page-header reveal">
+    <span class="section-tag">Estamos para ti</span>
+    <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem);">Agenda tu <em style="font-style:italic;color:var(--sky);">cita</em></h1>
+    <p class="section-sub">Contáctanos por cualquier medio o llena el formulario y nos comunicaremos contigo a la brevedad.</p>
+  </div>
+
+  <!-- CONTACTO + FORMULARIO -->
+  <section class="contact-section">
+
+    <div class="contact-info reveal">
+      <h2>Información de contacto</h2>
+
+      <div class="info-item">
+        <div class="info-icon-wrap">📍</div>
+        <div>
+          <p class="info-label">Dirección</p>
+          <p class="info-value">Calle Ejemplo #123, Col. Centro<br>Naucalpan de Juárez, Estado de México</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon-wrap">📞</div>
+        <div>
+          <p class="info-label">Teléfono</p>
+          <a href="tel:5500000000" class="info-value info-link">55 0000 0000</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon-wrap">💬</div>
+        <div>
+          <p class="info-label">WhatsApp</p>
+          <a href="https://wa.me/5500000000" target="_blank" class="info-value info-link">Escríbenos por WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon-wrap">✉️</div>
+        <div>
+          <p class="info-label">Correo</p>
+          <a href="mailto:contacto@smilecare.mx" class="info-value info-link">contacto@smilecare.mx</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon-wrap">🕗</div>
+        <div>
+          <p class="info-label">Horario</p>
+          <p class="info-value">Lun – Vie: 9:00 am – 7:00 pm<br>Sáb: 10:00 am – 2:00 pm</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="contact-form-wrap reveal">
+      <h3>Solicitar cita</h3>
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required/>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="55 0000 0000" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="servicio">Servicio de interés</label>
+          <select id="servicio">
+            <option value="">Selecciona un servicio...</option>
+            <option>Limpieza dental</option>
+            <option>Blanqueamiento</option>
+            <option>Ortodoncia</option>
+            <option>Implantes</option>
+            <option>Endodoncia</option>
+            <option>Carillas</option>
+            <option>Odontología pediátrica</option>
+            <option>Revisión preventiva</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha preferida</label>
+          <input type="date" id="fecha"/>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje o notas adicionales</label>
+          <textarea id="mensaje" rows="3" placeholder="¿Algún síntoma o duda que quieras comentarnos?"></textarea>
+        </div>
+        <button type="submit" class="btn-sky" style="width:100%; justify-content:center;">
+          Enviar solicitud de cita
+        </button>
+        <p class="form-success" id="formSuccess">✓ Solicitud enviada. ¡Te contactaremos pronto!</p>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- MAPA -->
+  <div class="map-section reveal">
+    <div class="map-box">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="20" r="9" stroke="#4da6e8" stroke-width="2.5"/>
+        <circle cx="24" cy="20" r="3.5" fill="#4da6e8"/>
+        <line x1="24" y1="29" x2="24" y2="44" stroke="#4da6e8" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <p>Agrega aquí tu mapa de Google Maps</p>
+      <a href="https://maps.google.com" target="_blank" class="btn-sky" style="margin-top:.5rem; font-size:.75rem; padding:.6rem 1.4rem;">
+        Abrir en Google Maps →
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">Smile<span>Care</span> – Consultorio Dental</div>
+    <div class="footer-links">
+      <a href="servicios.html">Servicios</a>
+      <a href="doctor.html">El Doctor</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 SmileCare. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

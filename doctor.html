@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Doctor – SmileCare</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C9 3 6 5.5 6 9c0 2 .5 3.5 1.2 5L8.5 20c.3 1 1 1.5 1.8 1.5h3.4c.8 0 1.5-.5 1.8-1.5l1.3-6C17.5 12.5 18 11 18 9c0-3.5-3-6-6-6z" fill="white" opacity=".9"/></svg>
+      </div>
+      <span class="nav-name">Smile<span>Care</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="doctor.html" class="active">El Doctor</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="nav-cta">Agendar cita</a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <div class="page-header reveal">
+    <span class="section-tag">Conoce al equipo</span>
+    <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem);">El <em style="font-style:italic;color:var(--sky);">Doctor</em></h1>
+    <p class="section-sub">Más de 10 años dedicados a transformar sonrisas con profesionalismo y calidez humana.</p>
+  </div>
+
+  <!-- DOCTOR BIO -->
+  <section class="doctor-section">
+    <div class="doctor-photo reveal">
+      <div class="doctor-photo-placeholder">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="24" r="14" stroke="#4da6e8" stroke-width="2"/>
+          <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24" stroke="#4da6e8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <p>Agrega aquí la foto del doctor</p>
+      </div>
+    </div>
+
+    <div class="doctor-info reveal">
+      <h2>Dr. Juan Pérez López</h2>
+      <p class="doctor-specialty">Cirujano Dentista · Cédula Prof. 0000000</p>
+      <p class="doctor-bio">
+        Egresado de la UNAM con especialidad en Ortodoncia y Ortopedia Maxilofacial. 
+        Con más de 10 años de experiencia clínica, el Dr. Pérez se distingue por su 
+        atención personalizada y su compromiso con las técnicas más actuales en odontología 
+        estética y rehabilitadora. Ha atendido a más de 500 pacientes con resultados que 
+        hablan por sí solos.
+      </p>
+
+      <div class="credentials">
+        <div class="cred-item">
+          <div class="cred-icon">🎓</div>
+          <div class="cred-text">
+            <strong>Licenciatura en Cirugía Dental</strong>
+            Universidad Nacional Autónoma de México (UNAM), 2014
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🏅</div>
+          <div class="cred-text">
+            <strong>Especialidad en Ortodoncia</strong>
+            Instituto Nacional de Ortodoncia, 2016
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">📋</div>
+          <div class="cred-text">
+            <strong>Miembro activo</strong>
+            Asociación Dental Mexicana (ADM)
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🔬</div>
+          <div class="cred-text">
+            <strong>Diplomado en Implantología Oral</strong>
+            Centro de Estudios Odontológicos, 2019
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIO -->
+  <section class="schedule-section">
+    <div class="schedule-inner">
+      <div class="reveal">
+        <span class="section-tag">Horario de atención</span>
+        <h2 class="section-title">¿Cuándo<br><em style="font-style:italic;color:var(--sky);">te atendemos?</em></h2>
+        <p class="section-sub" style="margin:0 auto;">Consulta nuestro horario semanal y agenda tu cita en el horario que mejor te convenga.</p>
+      </div>
+
+      <div class="schedule-grid reveal">
+        <div class="schedule-row header">
+          <div class="schedule-day">Día</div>
+          <div class="schedule-time">Horario</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Lunes</div>
+          <div class="schedule-time">9:00 am – 7:00 pm</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Martes</div>
+          <div class="schedule-time">9:00 am – 7:00 pm</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Miércoles</div>
+          <div class="schedule-time">9:00 am – 7:00 pm</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Jueves</div>
+          <div class="schedule-time">9:00 am – 7:00 pm</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Viernes</div>
+          <div class="schedule-time">9:00 am – 6:00 pm</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-day">Sábado</div>
+          <div class="schedule-time">10:00 am – 2:00 pm</div>
+        </div>
+        <div class="schedule-row closed">
+          <div class="schedule-day">Domingo</div>
+          <div class="schedule-time">Cerrado</div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;text-align:center;" class="reveal">
+        <a href="contacto.html" class="btn-sky">Agendar cita →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">Smile<span>Care</span> – Consultorio Dental</div>
+    <div class="footer-links">
+      <a href="servicios.html">Servicios</a>
+      <a href="doctor.html">El Doctor</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 SmileCare. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
