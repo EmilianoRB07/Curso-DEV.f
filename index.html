@@ -1,13 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RETO 1</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmileCare – Consultorio Dental</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Tarde pero seguro, Mi primer pagina web</h1>
-    <h4>Sensei no pude ingresar a la clase de ayer ya que estudio en las tardes</h4>
-    <h2>Saludos!</h2>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3C9 3 6 5.5 6 9c0 2 .5 3.5 1.2 5L8.5 20c.3 1 1 1.5 1.8 1.5h3.4c.8 0 1.5-.5 1.8-1.5l1.3-6C17.5 12.5 18 11 18 9c0-3.5-3-6-6-6z" fill="white" opacity=".9"/>
+        </svg>
+      </div>
+      <span class="nav-name">Smile<span>Care</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="doctor.html">El Doctor</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="nav-cta">Agendar cita</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="hero-content reveal">
+      <span class="hero-tag">✦ Consultorio Dental Certificado</span>
+      <h1 class="hero-title">Tu sonrisa,<br>nuestra <em>pasión</em></h1>
+      <p class="hero-sub">Atención dental de calidad con la más alta tecnología y el trato humano que mereces.</p>
+      <div class="hero-btns">
+        <a href="contacto.html" class="btn-sky">Agendar cita</a>
+        <a href="servicios.html" class="btn-outline-sky">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-circle">
+        <div class="hero-circle-inner">
+          <svg class="hero-tooth-icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="56" fill="#eaf3fb"/>
+            <path d="M60 20c-16 0-26 10-26 24 0 8 2 14 5 20l5 28c1.2 4.5 4.5 6.5 8 6.5h16c3.5 0 6.8-2 8-6.5l5-28c3-6 5-12 5-20 0-14-10-24-26-24z" fill="#4da6e8" opacity=".25"/>
+            <path d="M60 26c-13 0-20 8-20 18 0 6 1.5 11 4 17l5 27c.8 3 3 5 6 5h10c3 0 5.2-2 6-5l5-27c2.5-6 4-11 4-17 0-10-7-18-20-18z" fill="#4da6e8" opacity=".6"/>
+            <circle cx="50" cy="50" r="4" fill="white" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="hero-badge badge-1"><span>⭐</span> +500 pacientes</div>
+        <div class="hero-badge badge-2"><span>🦷</span> 10 años de exp.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar reveal">
+    <div class="stat-item">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Pacientes atendidos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">10</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Especialidades</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">98%</div>
+      <div class="stat-label">Pacientes satisfechos</div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS PREVIEW -->
+  <section class="services-preview">
+    <div class="reveal">
+      <span class="section-tag">Lo que ofrecemos</span>
+      <h2 class="section-title">Nuestros principales<br>servicios</h2>
+      <p class="section-sub">Tratamientos completos para toda la familia, desde revisiones preventivas hasta estética dental avanzada.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🦷</div>
+        <h3>Limpieza dental</h3>
+        <p>Profilaxis profesional para mantener tus dientes sanos y brillantes.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">✨</div>
+        <h3>Blanqueamiento</h3>
+        <p>Recupera el blanco natural de tu sonrisa con técnicas seguras.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔧</div>
+        <h3>Ortodoncia</h3>
+        <p>Brackets y alineadores transparentes para una dentadura perfecta.</p>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem;">
+      <a href="servicios.html" class="btn-outline-sky reveal">Ver todos los servicios →</a>
+    </div>
+  </section>
+
+  <!-- BANNER CTA -->
+  <section style="background: linear-gradient(135deg,#4da6e8,#7ec3f5); padding:5rem 3rem; text-align:center;" class="reveal">
+    <p style="font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:.8rem;">Primera consulta</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);color:white;margin-bottom:1.5rem;line-height:1.2;">¿Listo para mejorar<br>tu sonrisa?</h2>
+    <a href="contacto.html" style="display:inline-block;background:white;color:#4da6e8;font-family:'Nunito',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:.9rem 2.2rem;border-radius:50px;box-shadow:0 8px 24px rgba(0,0,0,.15);transition:transform .2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Agendar mi cita →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">Smile<span>Care</span> – Consultorio Dental</div>
+    <div class="footer-links">
+      <a href="servicios.html">Servicios</a>
+      <a href="doctor.html">El Doctor</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-copy">© 2026 SmileCare. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
